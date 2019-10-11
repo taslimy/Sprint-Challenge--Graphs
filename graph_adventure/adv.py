@@ -38,6 +38,10 @@ room_dict = {}
 rooms[0] = player.currentRoom.getExits()
 room_dict[0] = player.currentRoom.getExits()
 
+# make faster later.
+#randomize direction
+# so it gets one thats faster.
+
 # it should retuen false when all rooms are explored
 while len(rooms) < len(roomGraph) - 1:
     if player.currentRoom.id not in rooms:
@@ -63,7 +67,7 @@ while len(rooms) < len(roomGraph) - 1:
     path_goback.append(reverse_dir[room_exit])
     # ya boy is traveling
     player.travel(room_exit)
-    print(rooms)
+   # print(rooms)
    
 
 # TRAVERSAL TEST
